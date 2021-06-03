@@ -34,7 +34,7 @@ let numberOfCorrectAnswers = 0
     if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
       numberOfCorrectAnswers ++
     }
-      console.log(`${i + 1} ${questions[i]}\nYour answer: ${candidateAnswers[i]}\nCorrect answer: ${correctAnswers[i]}` + '\n');
+      console.log(`${i + 1}) ${questions[i]}\nYour answer: ${candidateAnswers[i]}\nCorrect answer: ${correctAnswers[i]}` + '\n');
   }
   let grade =(numberOfCorrectAnswers / questions.length) * 100;
   console.log(`>>>Overall Grade: ${grade}% (${numberOfCorrectAnswers} of ${questions.length} responses correct<<<)`);
